@@ -1,0 +1,21 @@
+body {
+    background-color: pink;
+}
+
+.container {
+    display: grid;  /* initialisation de la grille*/
+    /* définir la grille */
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 50px 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 50px 1fr 1fr 2fr;
+    /* si on ne définit par de rows, elles seront créées en fonction du nombre d'éléments à afficher et de leur taille */
+    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: 20px; /* le même gap pour ligne et colonne */
+    gap: 10px 20px; /* ligne / colonne */
+
+}
