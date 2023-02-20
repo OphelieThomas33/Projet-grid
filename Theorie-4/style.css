@@ -1,0 +1,34 @@
+.app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "header header header"
+    "main . sidebar"   /* le point signifie => cellule vide */
+    "footer footer footer";
+}
+
+.header {
+    background-color: purple;
+    grid-area: header;
+}
+
+.main {
+    background-color: green;
+    grid-area: main;
+}
+
+/* .empty {
+    background-color: gray;
+    grid-area: empty;
+} */
+
+.sidebar {
+    background-color: blue;
+    grid-area: sidebar;
+}
+
+.footer {
+    background-color: orange;
+    grid-area: footer;
+}
