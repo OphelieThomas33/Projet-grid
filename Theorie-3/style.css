@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+
+    /* positionnement des élements dans les cellules */
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cell {
+    background-color: orange;
+}
+
+.fifth {
+    background-color: red;
+    justify-self: stretch;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ninth {
+    place-self: end center;
+    /* raccourci de : */
+    /* align-self: end; */
+    /* justify-self: center; */
+}
