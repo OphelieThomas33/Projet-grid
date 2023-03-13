@@ -1,0 +1,42 @@
+/* Masonry */
+
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    grid-template-rows: masonry;  
+    /* ne fonctionne plus sous aucun navigateur : permettait de mettre les images les uns en dessous des autres sans "blancs" */
+}
+
+.masonry img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* Subgrid */
+
+.container {
+    display: grid;
+    background-color: aquamarine;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.subcontainer {
+    background-color: red;
+    grid-row: 2 span;
+    grid-column: 1 /4;
+    display: grid;
+    /* Attention subgrid ne fonctionne pas avec tous les navigateurs */
+    grid-template-columns: subgrid;
+}
+
